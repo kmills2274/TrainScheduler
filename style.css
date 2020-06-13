@@ -1,0 +1,54 @@
+/* Jumbotron */
+#titleJumbotron {
+    background-image: url(assets/2369835d6e57ce57d821d8173c4ef67b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 360px;
+}
+
+/* Main */
+body {
+    background-image: url(assets/wp3746725-hogwarts-express-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading */
+.title{
+    background: rgb(146, 4, 4);
+    padding: 10px 0px 10px 10px;
+    color: white;
+
+}
+
+/* Table */
+thead {
+    border-bottom: 1px solid #000000;
+    background-color: #d3d3d3
+}
+
+tr {
+    border-top: 1px solid #000000;
+}
+  
+th{
+    padding: 0 4em 0 0;
+}
+
+.tableEntry {
+    color: #767A79;
+}
+
+#submit {
+    width: auto;
+    background-color: rgb(146, 4, 4);
+    color: white;
+    justify-self: center;
+}
+
+/* Form */
+input {
+    width: 100%;
+}

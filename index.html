@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Train Scheduler</title>
+
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    
+    <div class = "container">
+
+        <div class = "jumbotron jumbotron-fluid" id="titleJumbotron"></div>
+
+        <div class = "title">Daily Schedule- Platform 9 3/4<span id="currentDate" class="float-right pr-3"></span></div>
+
+        <div class = "jumbotron" id="trainSchedule">
+            
+            <div class = "table-responsive">
+
+                <table id="schedule" class="table table-striped table-hover">
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col"></th>
+                            <th scope="col">Train Number</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                            <th scope="col" class="edit"></th>
+                            <th scope="col" class="delete"></th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+
+                </table>
+
+            </div>
+            
+        </div>
+    
+        <div class = 'title'>Add Train</div>
+
+        <div class ="jumbotron" id='addTrain'>
+            
+            <div class = 'maintext'>
+
+                <form>
+
+                Train Name:<br>
+                <input type="text" name="TrainName" onfocus="this.value=''" value="Train Name" class="tableEntry" id="trainName">
+
+                <br>
+
+                Destination:<br>
+                <input type="text" name="Destination" onfocus="this.value=''" value="Destination" class="tableEntry" id="destination">
+                
+                <br>
+                
+                First Train Time:<br>
+                <input type="text" name="Time" value="HH:MM" onfocus="this.value=''" class="tableEntry" id="trainTime">
+                
+                <br>
+                
+                Frequency (min):<br>
+                <input type="text" name="Frequency" value="" onfocus="this.value=''" class="tableEntry" id="frequency">
+                
+                <br><br>
+
+                <input type="submit" value="Submit" id="submit">
+
+                </form> 
+
+            </div>
+            
+        </div>
+
+    </div>
+
+     <!-- Javascript -->
+     <script src="moment.js"></script>
+
+</body>
+
+</html>
