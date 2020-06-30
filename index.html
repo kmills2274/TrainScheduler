@@ -6,7 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Train Scheduler</title>
+    <title>Hogwarts Railways Daily Schedule</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../TrainScheduler/assets/favicon_io (2)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../TrainScheduler/assets/favicon_io (2)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../TrainScheduler/assets/favicon_io (2)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 
     <!-- Reset CSS -->
@@ -17,6 +22,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -29,7 +36,7 @@
 
         <div class = "jumbotron jumbotron-fluid" id="titleJumbotron"></div>
 
-        <div class = "title">Daily Schedule- Platform 9 3/4<span id="currentDate" class="float-right pr-3"></span></div>
+        <div class = "title">Daily Schedule: King's Cross Station- Platform 9 3/4<span id="currentDate" class="float-right pr-3"></span></div>
 
         <div class = "jumbotron" id="trainSchedule">
             
@@ -44,7 +51,7 @@
                             <th scope="col"></th>
                             <th scope="col">Train Number</th>
                             <th scope="col">Destination</th>
-                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Frequency (minutes)</th>
                             <th scope="col">Next Arrival</th>
                             <th scope="col">Minutes Away</th>
                             <th scope="col" class="edit"></th>
@@ -54,8 +61,7 @@
 
                     </thead>
 
-                    <tbody>
-                    </tbody>
+                    <tbody></tbody>
 
                 </table>
 
@@ -63,7 +69,7 @@
             
         </div>
     
-        <div class = 'title'>Add Train</div>
+        <div class = 'title'>Add Train to Schedule</div>
 
         <div class ="jumbotron" id='addTrain'>
             
@@ -86,7 +92,7 @@
                 
                 <br>
                 
-                Frequency (min):<br>
+                Frequency (minutes):<br>
                 <input type="text" name="Frequency" value="" onfocus="this.value=''" class="tableEntry" id="frequency">
                 
                 <br><br>
@@ -101,6 +107,21 @@
 
     </div>
 
+     <!-- jQuery 3.3.1 -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!--Bootstrap JS-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>    
+     
+     <!-- Firebase -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+ 
+     <!-- Moments.js -->
+     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+
+     
      <!-- Javascript -->
      <script src="moment.js"></script>
 

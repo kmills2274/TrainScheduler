@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center top;
     height: 360px;
+    margin-top: 100px;
 }
 
 /* Main */
@@ -13,14 +14,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
 }
 
-/* Heading */
+/* Table Titles */
 .title{
     background: rgb(146, 4, 4);
     padding: 10px 0px 10px 10px;
     color: white;
-
 }
 
 /* Table */
@@ -33,12 +34,17 @@ tr {
     border-top: 1px solid #000000;
 }
   
-th{
-    padding: 0 4em 0 0;
+th.delete{
+    display: none;
 }
 
 .tableEntry {
     color: #767A79;
+}
+
+/* Form */
+input {
+    width: 100%;
 }
 
 #submit {
@@ -46,9 +52,4 @@ th{
     background-color: rgb(146, 4, 4);
     color: white;
     justify-self: center;
-}
-
-/* Form */
-input {
-    width: 100%;
 }
